@@ -11,6 +11,10 @@ body {
     font-size: 32px;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 @media (max-width: 430px) {
     body {
         font-size: 24px;
@@ -60,6 +64,10 @@ body {
     position: relative;
 }
 
+#link-row {
+    margin-bottom: 200px;
+}
+
 
 #skills span {
     white-space: nowrap;
@@ -70,3 +78,48 @@ body {
         font-size: 80%;
     }
 }
+
+
+
+
+.project-row {
+    color: #444;
+    margin-top: 40px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.project-row:hover {
+    color: #337ab7;
+    transition: 0.4s;
+}
+
+
+div .project-thumb {
+    background-size: 100% auto;
+    background-position: center;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+
+.project-desc {
+    text-align: left;
+}
+
+.project-desc.right-align {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .project-desc, .project-desc.right-align {
+        text-align: center;
+    }
+    
+    div.project-thumb {
+        height: 250px;
+    }
+}
+
+.proj
