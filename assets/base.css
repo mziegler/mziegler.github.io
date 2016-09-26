@@ -27,6 +27,15 @@ a:hover {
     margin-bottom: 80px;
 }
 
+@media (max-width: 768px) {
+    .row.project-row {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
 #hello {
     background-color: #fff;
     text-align: center;

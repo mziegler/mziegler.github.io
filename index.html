@@ -3,6 +3,7 @@
 
     <title>Matt Ziegler</title>
     
+    <script src="assets/scripts/jquery-3.1.1.min.js"></script>
     <script src="assets/bootstrap/js/boostrap.min.js"></script>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
 
@@ -81,7 +82,36 @@
                 </div>
             </div>    
         </a>
+        
+        
+        <a href="drawings.html" target="_blank">
+            <div class="row project-row">
+                <div class="col-sm-4 project-thumb col-sm-push-7" id="drawings-thumb" style="background-image:url('assets/drawings/thumbs/04.jpg');background-position:center top;">&nbsp;</div>
+                <div class="col-sm-6 col-sm-offset-1 col-sm-pull-4 project-desc right-align">
+                    <h2><span style="font-size:150%">Pastel Drawings</span></h2>
+                </div>
+            </div>
+        </a>
+        <script type="text/javascript">
+        
+            // Cycle through a couple drawing thumbnails
+        
+            var thumbPictures = ['04', '05', '09', '24', '16'];
+            var thumbCounter = 0;
+            
+            setInterval(function() {
+                thumbCounter += 1;
+                $('#drawings-thumb').animate({'opacity':0}, 300, 'swing', function() {
+                    $('#drawings-thumb')
+                        .css('background-image', "url('assets/drawings/thumbs/" + thumbPictures[thumbCounter % thumbPictures.length] + ".jpg')")
+                        .animate({'opacity':1}, 300);
+                });
+                
+            }, 5000);
+        </script>
     </div>
+
+    
 
 
 </body>
