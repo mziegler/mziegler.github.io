@@ -121,6 +121,11 @@ div .project-thumb {
     text-align: right;
 }
 
+.attribution {
+    display: block;
+    font-size: 50%;
+}
+
 @media (max-width: 768px) {
     .project-desc, .project-desc.right-align {
         text-align: center;
