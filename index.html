@@ -17,17 +17,22 @@
         <div class="jumbotron" id="hello">
             <img id="skin" src="assets/skin.png">
             <h1>Matt Ziegler</h1>
-            <div id="skills">
-                <span>Consultant &bull;</span> <span>Freelancer</span> <br />
-                <span>Software Engineer &bull;</span> <span>Biologist &bull;</span> <span>UI+UX Designer</span> <br />
-                <span>Data Visualizer &bull;</span> <span>Full-Stack Web Developer</span> <br />
-                <span>Conservationist &bull;</span> <span>Data Wrangler &bull;</span> <span>Bicycle Enthusiast</span> <br />
-                <span>Open-Source Software Nerd &bull;</span> <span>Wanderer</span><br />
-            </div>
         </div>
         
         <div class="row" id="link-row">            
-            <div class="col-md-6 link-col">
+            <div class="col-md-12 link-col">
+                <img src="assets/email.png" class="link-icon" style="top:6px">
+                
+                <script type="text/javascript">                    
+                    var addr = ['&#101;&#100;&#117;', '&#110;&#046;', '&#116;&#111;', '&#110;&#103;', '&#104;&#105;', '&#097;&#115;', '&#046;&#119;', '&#099;&#115;', '&#103;&#064;', '&#122;&#105;', '&#116;&#116;', '&#109;&#097;'];
+                    
+                    var addr_str = addr[11] + addr[10] + addr[9] + addr[8] + addr[7] + addr[6] + addr[5] + addr[4] + addr[3] + addr[2] + addr[1] + addr[0];
+                    
+                    document.write(addr_str);
+                </script>
+            </div>
+            
+            <div class="col-md-12 link-col">
                 <img src="assets/email.png" class="link-icon" style="top:6px">
                 
                 <script type="text/javascript">
@@ -38,30 +43,87 @@
                     
                     document.write(addr_str);
                 </script>
-            </div>
+            </div>            
             
             
-            
-            
-            <div class="col-md-6 link-col">
+            <!--<div class="col-md-6 link-col">
                 <a href="http://github.com/mziegler" target="_blank">
                     <img src="assets/github.png" class="link-icon" style="top:4px">
                     GitHub: mziegler
                 </a>
+            </div>-->
+            
+            <div class="col-md-12 link-col">
+                <a class="btn" id="cv-link" target="_blank" href="/MattZiegler.pdf">CV</a>
             </div>
         </div>
+        
+        <div class="row" id="aboutme-row">
+            <div class="col-md-9">
+            
+            <p>
+                I'm a PhD student in the <a href="http://ictd.cs.washington.edu/" target="_blank">ICTD Lab</a> at the University of Washington, studying under <a href="https://kurti.sh/" target="_blank">Kurtis Heimerl</a> and <a href="https://www.cs.washington.edu/people/faculty/anderson" target="_blank">Richard Anderson</a>.  I'm interested in environmental justice, technologies for community governence of conservation projects, and accessable computational tools for natural resource management in remote places.</p>
+            </p>
+
+            <p>
+                Combining backgrounds in computer science and environmental research, I've worked in areas like primate behavioral ecology, environmental education, genomics, insect biodiversity.  I've worked as a consultant designing and developing software tools for biologists, and before starting my PhD I interned at <a href="https://www.menstrupedia.com/" target="_blank">Menstrupedia</a> and <a href="http://www.digitalgreen.org/" target="_blank">Digital Green</a>, conducting user research.
+            </p>
+            
+            <p>
+                I'm a 2018 recipeient of the <a href="https://www.nsfgrfp.org/" target="_blank">NSF Graduate Research Fellowship</a>, and a gradudate fellow at the <a href="https://depts.washington.edu/envirpol/" target="_blank">UW Center for Environmental Politics</a>.
+            </p>
+
+            </div>
+            <div class="col-md-3">
+                <img id="portrait" src="assets/portrait.jpg">
+            </div>
+        </div>
+        
+        
+        
+        <div class="row flower-separator-row">
+            <div class="col col-sm-12"><img src="/assets/watercolor-autumn-flower.png" id="flower-separator"></div>
+        </div>
+        
+        
+        
+        <div class="row project-row">
+            <a href="/assets/pdfs/Market-Info-ICTDX-final.pdf" target="_blank"><div class="col-sm-4 col-sm-offset-1 project-thumb" style="background-image:url('assets/dharhara-standing.jpg');">&nbsp;</div></a>
+            <div class="col-sm-6 project-desc">
+                <a href="/assets/pdfs/Market-Info-ICTDX-final.pdf" target="_blank" style="color:inherit">
+                    <h3 style="margin-top:0">Fresh Insights: User Research Towards a Market Information Service for Bihari Vegetable Farmers</h3>
+                    <span>Published at ACM ICTD '19</span><br />
+                </a>
+                <div class="attribution">
+                    With <a href="http://getloopapp.com/" target="_blank">Loop</a> at <a href="http://www.digitalgreen.org/" target="_blank">Digital Green</a><br />
+                </div>
+            </div>
+        </div>
+        
+        <a href="http://metasra.biostat.wisc.edu" target="_blank">    
+            <div class="row project-row">
+                <div class="col-sm-4 project-thumb col-sm-push-7" style="background-image:url('assets/MetaSRA.png');background-position:center top;">&nbsp;</div>
+                <div class="col-sm-6 col-sm-offset-1 col-sm-pull-4 project-desc right-align">
+                    <h2 style="margin-top:10px">MetaSRA</h2>
+                    <p>
+                        Find human RNA-seq samples using standardized ontology terms<br />
+                    </p>
+                    <span class="attribution">With Matt Bernstein Dr. Colin Dewey</span>
+                </div>
+            </div>  
+        </a>
         
         
         <div class="row project-row">
             <a href="http://antmaps.org" target="_blank"><div class="col-sm-4 col-sm-offset-1 project-thumb" style="background-image:url('assets/antmaps.png');">&nbsp;</div></a>
             <div class="col-sm-6 project-desc">
                 <a href="http://antmaps.org" target="_blank" style="color:inherit">
-                    <h2>AntMaps.org</h2>
-                    <small>Biodiversity data visualizations</small><br />
+                    <h2 style="margin-top:10px">AntMaps.org</h2>
+                    <span>Biodiversity data visualizations</span><br />
                 </a>
                 <div class="project-notes">
                     Featured in <a href="https://www.theguardian.com/environment/2015/aug/07/where-are-the-worlds-ants-first-ever-map-detailing-15000-species-launched" target="_blank">The Guardian</a> and <a href="http://www.sciencemag.org/news/2015/08/new-interactive-map-shows-where-world-s-ants-are?rss=1" target="_blank">Science Magazine</a><br />
-                    Publication in <a href="http://dx.doi.org/10.1016/j.ecoinf.2016.02.006" target="_blank">Ecological Informatics</a>
+                    Published in <a href="http://dx.doi.org/10.1016/j.ecoinf.2016.02.006" target="_blank">Ecological Informatics</a>
                 </div>
                 <span class="attribution">With the OIST Arilab</span>
             </div>
@@ -72,10 +134,10 @@
                 <div class="col-sm-4 project-thumb col-sm-push-7" style="background-image:url('assets/gadget.png');background-position:center top;">&nbsp;</div>
                 <div class="col-sm-6 col-sm-offset-1 col-sm-pull-4 project-desc right-align">
                     <h2>GADGET</h2>
-                    <small>
+                    <p>
                         Search the biomedical literature for genes and metabolites<br />
-                        <span style="font-style:italic;font-size:60%;">Publication pending</span>
-                    </small>
+                        <span style="font-style:italic;font-size:70%;">Publication pending</span>
+                    </p>
                     <span class="attribution">With Dr. Mark Craven and Sid Kiblawi</span>
                 </div>
             </div>  
@@ -89,9 +151,9 @@
             <div class="col-sm-6 project-desc">
                 <a href="http://howtobeamonkey.org" target="_blank" style="color:inherit;">
                     <h2>How To Be a Monkey</h2>
-                    <small>Ever wonder what it's like to be a baby capuchin monkey?</small><br />
+                    Ever wonder what it's like to be a baby capuchin monkey?<br />
                 </a>
-                <span style="color:#777;font-size:60%;line-height:1.6">[<a href="https://docs.google.com/document/d/1XJdb0YcUOxPBBlf1JAJUcNNGuyyCc3uS0E9aUkgreLk/edit?usp=sharing" target="_blank">Design document</a>]</span>
+                <span style="color:#777;font-size:85%;line-height:1.6">[<a href="https://docs.google.com/document/d/1XJdb0YcUOxPBBlf1JAJUcNNGuyyCc3uS0E9aUkgreLk/edit?usp=sharing" target="_blank">Design document</a>]</span>
             </div>
         </div>    
         
@@ -131,16 +193,21 @@
         <div class="row project-row">
             <div class="col-sm-4 col-sm-offset-1 project-thumb" style="background-image:url('assets/undergrad.png');">&nbsp;</div></a>
             <div class="col-sm-6 project-desc">
-                <h2 style="color:black">Undergraduate Research</h2>
-                <small style="font-size:60%">
+                <h2 style="color:black; margin-top: 0">Undergraduate Research</h2>
+                <span style="font-size:85%">
                     <p><a href="/assets/pdfs/mop3.pdf" target="_blank">Mathematical Models of Circadian Rhythms in Gene Expression Data, and the Regulatory Role of Mop3 in Mice</a></p>
                     <p><a href="/assets/pdfs/clustering.pdf" target="_blank">Identification and Clustering of Genes Expressed In Circadian Rhythms</a></p>
                     <p><a href="/assets/pdfs/CRMs.pdf" target="_blank">Proposal: A novel supervised learning algorithm for detection of cis-regulatory modules in promoters and enhancers of ES cells</a></p>
-                </small>
+                    <p><a href="/assets/pdfs/Hilldale-writeup.pdf" target="_blank">A Supervised Machine Learning Model for Gene Regulation during Differentiation of Embryonic Stem Cells</a></p>
+                </span>
             </div>
         </div>
         
         
+        
+        <div class="row cell-row">
+            <div class="col-sm-12"><img src="/assets/cell.jpg" id="cell" /></div>
+        </div>
         
         <!--
         <div class="row" style="padding-top:100px;text-align:center">
