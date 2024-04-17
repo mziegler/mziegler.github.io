@@ -23,7 +23,7 @@ a:focus {
 
 #main-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin-bottom: 80px;
 }
 
@@ -40,6 +40,7 @@ a:focus {
     background-color: #fff;
     text-align: center;
     padding-bottom: 0;
+    margin-top: 40px;
 }
 
 #hello h1 {
@@ -91,7 +92,7 @@ a:focus {
 }
 
 #link-row {
-    margin-bottom: 200px;
+    margin-bottom: 160px;
 }
 
 
@@ -109,7 +110,7 @@ a:focus {
 
 
 .flower-separator-row {
-    margin-top: 70px;
+    margin-top: 90px;
     margin-bottom: 150px;
 }
 
@@ -126,7 +127,7 @@ a:focus {
 
 .project-row {
     color: #444;
-    margin-top: 140px;
+    margin-top: 60px;
     border-radius: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
